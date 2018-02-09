@@ -1,7 +1,9 @@
+// this function accepts a string and checks to see if the string entered is a palindrome, returns T or F accordingly
+
 function palindrome(str) {
 	var strArray = [];
 	var newStr = str.replace(/\s+/g, ' ').replace(/[^a-zA-Z-0-9]/g, '').toLowerCase();
-    newStr = newStr.replace(/-/g, '');
+    	newStr = newStr.replace(/-/g, '');
 	for (var i = 0; i < newStr.length; i++) {
 		strArray.push(newStr[i]);
 	}
