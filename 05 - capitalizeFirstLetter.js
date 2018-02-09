@@ -1,3 +1,5 @@
+// this function accepts a string and then capitalizes every word in the string
+
 function titleCase(str) {
   var splitStr = str.toLowerCase().split(" ");
   splitStr.forEach(function(val, i) {
