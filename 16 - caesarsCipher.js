@@ -2,14 +2,14 @@
 
 function rot13(str) {
 	str = str.toUpperCase();
-	var decipher = "";
-    var charNum;
+	let decipher = '';
+    let charNum;
     for (var i = 0; i < str.length; i++) {
     	charNum = str.charCodeAt(i);
     	if (charNum === 32) {
     		decipher += String.fromCharCode(charNum);
     	}
-    	else if(charNum >=0 && charNum <= 64) {
+    	else if(charNum >= 0 && charNum <= 64) {
     		decipher += String.fromCharCode(charNum);
     	}
     	else if (charNum + 13 >= 65 && charNum + 13 <= 90) {
