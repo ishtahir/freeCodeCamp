@@ -4,7 +4,7 @@ function rot13(str) {
 	str = str.toUpperCase();
 	let decipher = '';
     let charNum;
-    for (var i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
     	charNum = str.charCodeAt(i);
     	if (charNum === 32) {
     		decipher += String.fromCharCode(charNum);
