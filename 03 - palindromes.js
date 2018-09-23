@@ -2,5 +2,5 @@
 
 palindrome = str =>	{
   reverse = str.split('').reverse().join('');
-  return reverse === str ? true : false;
+  return reverse === str;
 }
