@@ -1,11 +1,9 @@
 // this function accepts a string and the length of the longest word in the string
 
-function findLongestWord(str) {
-  var strArr = str.split(" ");
-  var lengthArr = [];
+findLongestWord = str => {
+  const strArr = str.split(' ');
+  const lengthArr = [];
 
-  for (var i = 0; i < strArr.length; i++) {
-      lengthArr.push(strArr[i].length);
-  }
-  return Math.max.apply(null, lengthArr);
+  strArr.forEach(word => lengthArr.push(word.length));
+  return Math.max(...lengthArr);
 }
