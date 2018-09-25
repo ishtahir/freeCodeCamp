@@ -1,10 +1,9 @@
-// this function accepts a string and then capitalizes every word in the string
+// this function accepts a string and then capitalizes the first letter of every word in the string
 
-function titleCase(str) {
-  var splitStr = str.toLowerCase().split(" ");
-  splitStr.forEach(function(val, i) {
+titleCase = str => {
+  const splitStr = str.toLowerCase().split(' ');
+  splitStr.forEach((val, i) => {
       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substr(1);
   });
-  var newStr = splitStr.join(" ");
-  return newStr;
+  return splitStr.join(' ');
 }
