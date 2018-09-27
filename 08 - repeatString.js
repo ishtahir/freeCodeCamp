@@ -1,16 +1,14 @@
-// this function accepts a string and a number, and it simply repeats the string that number of times
-// if number is not positive it returns an empty string
+// repeat a given string num times, return an empty string if num is not a positive number, do not use built in .repeat() method
 
-function repeatStringNumTimes(str, num) {
+repeatStringNumTimes = (str, num) => {
 	if (num > 0) {
-		var newStr = "";
-		for (var i = 0; i < num; i++) {
+		let newStr = '';
+		for (let i = 0; i < num; i++) {
 			newStr += str;
 		}
-		console.log(newStr);
 		return newStr;
 	}
 	else {
-		return "";
+		return '';
 	}
 }
