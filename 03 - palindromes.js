@@ -1,6 +1,6 @@
-// this function accepts a string and checks to see if the string entered is a palindrome, returns T or F accordingly
+// this function checks to see if the string is a palindrome, returns true or false accordingly
 
-palindrome = str =>	{
+function palindrome(str) {
   const reverse = str.split('').reverse().join('');
   return reverse === str;
 }
