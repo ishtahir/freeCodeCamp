@@ -1,6 +1,6 @@
 // this function accepts a string and the length of the longest word in the string
 
-findLongestWord = str => {
+function findLongestWord(str) {
   const strArr = str.split(' ');
   const lengthArr = [];
 
