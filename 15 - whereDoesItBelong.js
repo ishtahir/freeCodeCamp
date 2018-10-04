@@ -1,9 +1,8 @@
-// this function takes in an array and a number, the array gets sorted from small to big and it returns the index of where the number belongs in a sorted array
+// this function takes in an array and a number, the array gets sorted in ascending order
+// it returns the index of the number in the array, or the length of the array
 
 function getIndexToIns(arr, num) {
-	arr.sort(function(a, b) {
-		return a - b;
-	});
+	arr.sort((a, b) => a - b);
 	for (var i = 0; i < arr.length; i++) {
 		if (num <= arr[i]) {
 			return i;
