@@ -1,7 +1,7 @@
 // given a string, it will return whether it's a valid phone number or not
 
 function telephoneCheck(str) {
-  const regex = /^(1\s?)?(\(\d{3}\)|\d{3})[ -]?[\d]{3}-?\s?[\d]{4}$/;
+  const regex = /^(1\s?)?(\(\d{3}\)|\d{3})[ -]?([\d]{3})-?\s?([\d]{4})$/;
   return regex.test(str);
 }
 
