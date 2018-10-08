@@ -1,0 +1,16 @@
+// function to display the first x numbers of the fibonacci sequence
+
+function fibonacci(num) {
+	const fibArr = [1, 1];
+	if (num <= 0) {
+		return;
+	} else if (num === 1) {
+		return [1];
+	}
+	for (let i = 0; i < num - 2; i++) {
+		const last = fibArr[fibArr.length - 1];
+		const secLast = fibArr[fibArr.length - 2];
+		fibArr.push(last + secLast);
+	}
+	return fibArr;
+}
